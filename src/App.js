@@ -90,6 +90,6 @@ const App = () => {
       </Scrollbars>
     </Splendour>
   );
-}
+} 
 
 export default App;
