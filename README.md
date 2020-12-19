@@ -7,4 +7,4 @@ Design and Coded By Haneen Mahdin
 
 ### `Links`
 - https://github.com/haneenmahd
-- Instagram(https://instagram.com/haneenmahdin
+- https://instagram.com/haneenmahdin
