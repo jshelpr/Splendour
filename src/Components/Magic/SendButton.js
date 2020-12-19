@@ -1,27 +1,24 @@
 import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
-  font-family: "Product Sans";
+  font-family: "DM Sans";
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
-  jsutify-content: center;
+  justify-content: center;
+  background: #222;
 `;
 const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  position: absolute;
-  top: 250px;
-  left: 35%;
-  height: 100px;
-  width: 250px;
+  height: 56px;
+  width: 220px;
   border-radius: 3rem;
-  background: #72c;
+  background: #6331d8;
   cursor: pointer;
   overflow: hidden;
-  box-shadow: 0px 4px  40px 4px #7722ccaa;
   transition: all .3s ease-in-out;
   &:active {
     transform: scale(0.98);
@@ -79,14 +76,14 @@ const Text = styled.div`
   z-index: 0;
   margin-left: 15px;
   position: relative;
-  font-weight: 900;
+  font-weight: 500;
   color: #fff;
-  font-size: 30px;
+  font-size: 20px;
   transition: all .3s ease-in-out;
   animation: ${TextIn} 3s ease-in-out;
 `;
 const SendButton = () => {
-    const OnClick = event => {
+    const OnClick = () => {
         const paperplane = document.getElementById("paperplane");
         var text = document.getElementById("text");
         var btn = document.getElementById("btn");
@@ -114,7 +111,7 @@ const SendButton = () => {
     return (
         <Wrapper>
             <Button id="btn" onClick={OnClick}>
-                <PaperPlane id="paperplane"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="35px" height="35px"><path d="M0 0h24v24H0z" fill="none" /><path fill="white" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" /></svg></PaperPlane>
+                <PaperPlane id="paperplane"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="20px" height="20px"><path d="M0 0h24v24H0z" fill="none" /><path fill="white" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" /></svg></PaperPlane>
                 <Text id="text">Send</Text>
             </Button>
         </Wrapper>

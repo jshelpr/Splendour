@@ -1,23 +1,19 @@
 import styled, { keyframes } from "styled-components";
-import ThreeDot from "./assets/three-dot.svg";
-import Navigate from "./assets/navigate.svg";
+import ThreeDot from "../../assets/three-dot.svg";
+import Navigate from "../../assets/navigate.svg";
 
 const Wrapper = styled.div`
-   height: 100vh;
-   width: 100vw;
-   background: #111;
-   display: flex;
-   flex-direction: row;
-   flex-wrap: wrap;
-   align-items: center;
-   justify-content: space-around;
-   overflow: hidden;
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #111122;
 `;
 const CardContainer = styled.div`
    position: absolute;
    height: 300px;
    width: 270px;
-   background: #222;
    border-radius: 1rem;
    display: flex;
    align-items: center;
@@ -28,7 +24,7 @@ const Card = styled.div`
    position: absolute;
    height: 300px;
    width: 270px;
-   background: #222;
+   background: #ffffff;
    border-radius: 1rem;
    display: flex;
    flex-direction: column;
@@ -43,8 +39,8 @@ const Header = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  color: #fff;
-  font-family: "SF Pro Display";
+  color: #222;
+  font-family: "DM Sans";
   font-size: 1.5rem;
   font-weight: 600;
   &::after {
@@ -81,13 +77,13 @@ const Item = styled.div`
   justify-content: flex-start;
   cursor: pointer;
   padding: 7px;
-  color: #fff;
-  font-family: "SF Pro Display";
+  color: #222;
+  font-family: "DM Sans";
   font-size: 1rem;
   border-radius: .512rem;
   transition: all .3s ease-in-out;
   &:hover {
-    background: #444;
+    background: #c4c4c4;
   }
 `;
 const PushAnimation = keyframes`
@@ -118,7 +114,7 @@ const NavigationBack = styled.div`
   align-items: center;
   justify-content: space-around;
   cursor: pointer;
-  font-family: "SF Pro Display";
+  font-family: "DM Sans";
   font-size: 1rem;
   color: #fff;
 `;
@@ -136,7 +132,7 @@ const PushHeader = styled.div`
   align-items: center;
   justify-content: space-around;
   color: #fff;
-  font-family: "SF Pro Display";
+  font-family: "DM Sans";
   font-size: 1.5rem;
   font-weight: 600;
 `;
@@ -147,7 +143,7 @@ const PushContent = styled.div`
   align-items: center;
   justify-content: space-around;
   color: #fff;
-  font-family: "SF Pro Display";
+  font-family: "DM Sans";
   font-size: 1.5rem;
   font-weight: 600;
 `;
@@ -158,7 +154,7 @@ const Paragraph = styled.div`
   align-items: center;
   justify-content: center;
   color: #fff;
-  font-family: "SF Pro Display";
+  font-family: "DM Sans";
   font-size: 1rem;
   font-weight: 400;
 `;

@@ -2,7 +2,7 @@ import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,10 +55,10 @@ const Loader = styled.div`
   }
 `;
 const UpdateButton = () => {
-  const OnClick = event => {
+  const OnClick = () => {
     var btn = document.getElementById('btn');
     var load = document.getElementById('load');
-    var text = document.getElementById('text');
+    var text = document.getElementById('update-text');
           btn.classList.add("loading");
           load.classList.add("loading");
           text.innerHTML = "Updating";
@@ -74,7 +74,7 @@ const UpdateButton = () => {
   return(
     <Wrapper>
     <Button onClick={OnClick} id="btn">
-    <Text id="text">Update</Text>
+    <Text id="update-text">Update</Text>
     <Loader id="load">
     </Loader>
     </Button>

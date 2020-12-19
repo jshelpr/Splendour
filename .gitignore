@@ -2,6 +2,7 @@
 
 #log files
 *.log
+.eslintcache
 
 # dependencies
 /node_modules

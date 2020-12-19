@@ -1,10 +1,8 @@
 import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
-   position: absolute;
-   top: 0px;
-   height: 100%;
-   width: 100%;
+   height: 100vh;
+   width: 50vw;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
@@ -21,8 +19,8 @@ const Loading = keyframes`
    }
 `;
 const Loader = styled.div`
-  height: 300px;
-  width: 300px;
+  height: 100px;
+  width: 100px;
   border-radius: 50%;
   border: 10px solid #c4c4c4;
   border-left: 10px solid #222222;

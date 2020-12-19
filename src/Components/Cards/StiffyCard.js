@@ -1,9 +1,9 @@
 import styled from "styled-components";
-import Bg from "./assets/MacBook.png";
+import Bg from "../../assets/MacBook.png";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -42,7 +42,7 @@ const Text = styled.div`
   justify-content: center;
   width: 100%;
   font-size: 20px;
-  font-family: "SF Pro Text";
+  font-family: "DM Sans";
   font-weight: 900;
   height: 50px;
   color: #222222;

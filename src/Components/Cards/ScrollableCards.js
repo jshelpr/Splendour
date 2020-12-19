@@ -6,12 +6,17 @@ import { Scrollbars } from "react-custom-scrollbars";
 import styled from "styled-components";
 import { rgba } from "polished";
 
+const Wrapper = styled.div`
+  height: 100vh;
+  width: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #fff;
+`;
 const Card = styled.div`
   font-family: "SF Pro Text";
   font-weight: 900;
-  position: relative;
-  left: 400px;
-  top: 100px;
   width: 500px;
   height: 440px;
   overflow: hidden;
@@ -19,6 +24,7 @@ const Card = styled.div`
   background: white;
   padding-top: 7rem;
   box-shadow: 0 4px 15px ${rgba("black", 0.05)};
+  transform: scale(.70) translate(0, 50px);
 `;
 
 const Topbar = styled.div`
@@ -130,6 +136,7 @@ const ScrollableCard = () => {
     ]);
 
     return (
+      <Wrapper>
         <Card>
             <Topbar>
                 {navItems.map(n => (
@@ -157,6 +164,7 @@ const ScrollableCard = () => {
                 ))}
             </Scrollbars>
         </Card>
+        </Wrapper>
     );
 };
 
