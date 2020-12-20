@@ -3,7 +3,7 @@ import Bg from "../../assets/MacBook.png";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 50vw;
+  width: 100%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;

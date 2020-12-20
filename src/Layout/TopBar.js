@@ -9,7 +9,7 @@ const Topbar = styled.div`
   width: 100vw;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background: #121117;
   position: absolute;
   top: 0;

@@ -3,7 +3,7 @@ import styled, { keyframes } from "styled-components";
 const Wrapper = styled.div`
   font-family: "DM Sans";
   height: 100vh;
-  width: 50vw;
+  width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
