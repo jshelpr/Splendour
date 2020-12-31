@@ -11,7 +11,8 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${rgba("green", 0.20)};
+  background: #fff;
+  transition: background 0.45s;
 `;
 const rippleAnimation = keyframes`
   0% {
