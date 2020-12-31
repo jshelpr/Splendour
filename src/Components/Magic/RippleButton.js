@@ -1,10 +1,18 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
-import { lighten, darken } from "polished";
+import { rgba } from "polished";
 
 const backgroundColor = "#6f4ae2";
 const rippleAnimationDuration = "1.15s";
 
+const Wrapper = styled.div`
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${rgba("green", 0.20)};
+`;
 const rippleAnimation = keyframes`
   0% {
     opacity: 0;
@@ -21,17 +29,15 @@ const rippleAnimation = keyframes`
   }
 `;
 
-const Card = styled.div`
+const Button = styled.div`
   position: absolute;
-  top: 40%;
-  left: 40%;
   overflow: hidden;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 170px;
+  width: 270px;
   height: 100px;
-  border-radius: 45px;
+  border-radius: 20px;
   background: ${backgroundColor};
   box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
   user-select: none;
@@ -42,9 +48,7 @@ const Card = styled.div`
     width: 80px;
     height: 80px;
     border-radius: 50%;
-    background: #eeeeeeaa;
-    box-shadow: inset -5px -5px 10px ${lighten(0.05, backgroundColor)},
-      inset 5px 5px 10px ${darken(0.05, backgroundColor)};
+    background: ${rgba("#eeeeee", 0.40)};
     opacity: 0;
     pointer-events: none;
     transform-origin: 0% 0%;
@@ -82,9 +86,11 @@ const RippleCard = props => {
     };
 
     return (
-        <Card id="ripple-card" onClick={onClick}>
+      <Wrapper>
+        <Button id="ripple-card" onClick={onClick}>
             <CardText>Ripple Button</CardText>
-        </Card>
+        </Button>
+      </Wrapper>
     );
 };
 

@@ -8,6 +8,7 @@ import SendButton from "./Components/Magic/SendButton";
 import SimpleLoader from "./Components/Magic/Simple Loader";
 import UpdateButton from "./Components/Magic/UpdateButton";
 import Topbar from "./Layout/TopBar";
+import RippleButton from "./Components/Magic/RippleButton";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -27,14 +28,7 @@ const Flex = styled.div`
   align-items: center;
   justify-content: space-around;
 `;
-const HeadText = styled.div`
-  font-family: "DM Sans";
-  font-size: 20px;
-  color: #fff;
-  position: absolute;
-  top: 85px;
-  left: 270px;
-`;
+
 const App = () => {
   return (
     <Splendour>
@@ -42,50 +36,12 @@ const App = () => {
         <Topbar />
       <Flex>
         <PushCard />
-        <HeadText>Push Card</HeadText>
         <ScrollabeCards />
-        <HeadText
-         style={{
-           transform: "translate(600px, 0px)",
-           color: "#222"
-         }}
-         >
-           Scrollabe Cards
-         </HeadText>
         <StiffyCard />
-        <HeadText
-         style={{
-           transform: "translate(0px, 550px)"
-         }}
-        >
-          Stiffy Card
-        </HeadText>
         <SendButton />
-        <HeadText
-          style={{
-            transform: "translate(570px, 550px)"
-          }}
-        >
-          Paper Plane Send Button
-        </HeadText>
           <SimpleLoader />
-          <HeadText
-            style={{
-              transform: "translate(0px, 1150px)",
-              color: "#222"
-            }}
-          >
-            Simple Loader
-            </HeadText>
           <UpdateButton />
-          <HeadText
-            style={{
-              transform: "translate(620px, 1150px)",
-              color: "#fff"
-            }}
-          >
-            Update Button
-          </HeadText>
+          <RippleButton />
       </Flex>
       </Scrollbars>
     </Splendour>
