@@ -24,7 +24,8 @@ const GithubIcon = styled.div`
   margin-left: 20px;
 `;
 const Text = styled.div`
-  font-family: 'DM Sans';
+  font-family: 'DM Sans', sans-serif;
+  margin: 12px;
   font-size: 18px;
   letter-spacing: 4px;
   color: ${rgba("#fff", .70)};
