@@ -63,15 +63,7 @@ const InputPlaceholder = styled.div`
 const InputIcon = styled.span`
   height: 50px;
   width: 50px;
-  border-radius: 50%:
-  display: flex;
-  align-items: center;
-  justify-content: center;
   color: ${rgba("white", 0.5)};
-  transition: background 0.45s;
-  &:hover {
-    background: ${rgba("#fff", 0.20)};
-  }
 `;
 
 const Wrapper = styled.div`
