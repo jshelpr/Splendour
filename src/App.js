@@ -9,6 +9,7 @@ import SimpleLoader from "./Components/Magic/Simple Loader";
 import UpdateButton from "./Components/Magic/UpdateButton";
 import Topbar from "./Layout/TopBar";
 import RippleButton from "./Components/Magic/RippleButton";
+import CountryPicker from "./Components/Magic/CountryPicker";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -34,18 +35,19 @@ const App = () => {
     <Splendour>
       <Scrollbars>
         <Topbar />
-      <Flex>
-        <PushCard />
-        <ScrollabeCards />
-        <StiffyCard />
-        <SendButton />
+        <Flex>
+          <PushCard />
+          <ScrollabeCards />
+          <StiffyCard />
+          <SendButton />
           <SimpleLoader />
           <UpdateButton />
           <RippleButton />
-      </Flex>
+          <CountryPicker />
+        </Flex>
       </Scrollbars>
     </Splendour>
   );
-} 
+}
 
 export default App;
