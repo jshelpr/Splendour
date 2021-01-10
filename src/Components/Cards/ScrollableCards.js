@@ -138,7 +138,7 @@ const ScrollableCard = () => {
         <Card>
             <Topbar>
                 {navItems.map(n => (
-                    <NavButton isActive={n.isActive}>
+                  <NavButton isActive={n.isActive}>
                         {n.icon}
                     </NavButton>
                 ))}
@@ -146,11 +146,11 @@ const ScrollableCard = () => {
             <Scrollbars autoHide>
                 {items.map(item => (
                     <ListItem>
-                        <ListItemIcon color={item.color}>
+                    <ListItemIcon key={item.id} color={item.color}>
                             {item.name.substr(0, 2)}
                         </ListItemIcon>
             <div>
-            <Name>{item.name}</Name>
+              <Name key={item.id}>{item.name}</Name>
               <Message>
                 Lorem ipsum dolor sit amador vehicule ...
               </Message>

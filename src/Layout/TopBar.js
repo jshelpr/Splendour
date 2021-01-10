@@ -48,11 +48,11 @@ const InstagramIcon = styled.div`
 const TopBar = () => {
     return (
         <Topbar>
-            <a href="https://www.github.com/haneenmahd/Splendour"><GithubIcon /></a>
+            <a target="_blank" rel="noreferrer" href="https://www.github.com/haneenmahd/Splendour"><GithubIcon /></a>
             <Text>
                 MICRO INTERACTIONS
                 </Text>
-            <a href="https://www.instagram.com/haneenmahdin"><InstagramIcon /></a>
+            <a target="_blank" rel="noreferrer" href="https://www.instagram.com/haneenmahdin"><InstagramIcon /></a>
         </Topbar>
     );
 }

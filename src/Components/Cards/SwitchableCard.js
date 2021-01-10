@@ -34,21 +34,25 @@ const Card = styled.div`
   & p {
       color: #ffffffaf;
   }
+  & audio {
+      outline: none;
+  }
 `;
-const LazyLoadCard = () => {
-    const [isChecked, setChecked] = useState(true);
+
+const SwitchableCard = () => {
+    const [isSwitched, setSwitch] = useState(true);
     return(
         <Wrapper>
         <Card style={{
-            background: `#${isChecked ? "52c" : "166edc"}`
+            background: `#${isSwitched ? "52c" : "166edc"}`
         }} 
-        onClick={() => setChecked(!isChecked)}
+        onClick={() => setSwitch(!isSwitched)}
         >
-            {isChecked  ? <h1>Love Your Voice!</h1> : <h1>Rewrite the Stars</h1>}
-            {isChecked ? <p>Singed By <strong>JONY</strong></p> : <p>Singed By <strong>The Greatest Showman</strong></p>}
+            {isSwitched  ? <h1>Love Your Voice!</h1> : <h1>Rewrite the Stars</h1>}
+            {isSwitched ? <p>Singed By <strong>JONY</strong></p> : <p>Singed By <strong>The Greatest Showman</strong></p>}
         </Card>
         </Wrapper>
     );
 }
 
-export default LazyLoadCard;
+export default SwitchableCard;

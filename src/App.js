@@ -10,7 +10,8 @@ import UpdateButton from "./Components/Magic/UpdateButton";
 import Topbar from "./Layout/TopBar";
 import RippleButton from "./Components/Magic/RippleButton";
 import CountryPicker from "./Components/Magic/CountryPicker";
-import LazyLoadCard from "./Components/Cards/SwitchableCard";
+import SwitchableCard from "./Components/Cards/SwitchableCard";
+import TabbedCards from "./Components/Cards/TabbedCards";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -34,7 +35,7 @@ const Flex = styled.div`
 const App = () => {
   return (
     <Splendour>
-      <Scrollbars>
+      <Scrollbars autoHide>
         <Topbar />
         <Flex>
           <PushCard />
@@ -45,7 +46,8 @@ const App = () => {
           <UpdateButton />
           <RippleButton />
           <CountryPicker />
-          <LazyLoadCard />
+          <SwitchableCard />
+          <TabbedCards />
         </Flex>
       </Scrollbars>
     </Splendour>

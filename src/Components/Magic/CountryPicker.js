@@ -171,6 +171,7 @@ const CountryPicker = () => {
                 <Dialog open={open}>
                     {json.map((c) => (
                         <Row
+                            key={c.name}
                             onClick={() => {
                                 setOpen(false);
                                 setCountry(c.name);
