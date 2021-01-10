@@ -10,10 +10,13 @@ const Topbar = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-around;
-  background: #121117;
-  position: absolute;
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  position: fixed;
   top: 0;
   left: 0;
+  z-index: 100;
+  border-bottom: 1px solid #c4c4c4;
 `;
 const GithubIcon = styled.div`
   height: 30px;
@@ -25,10 +28,13 @@ const GithubIcon = styled.div`
 `;
 const Text = styled.div`
   font-family: 'DM Sans', sans-serif;
-  margin: 12px;
   font-size: 18px;
+  font-weight: 900;
   letter-spacing: 4px;
-  color: ${rgba("#fff", .70)};
+  color: ${rgba("#222", 1)};
+  @media screen and (max-width: 550px) {
+    font-size: 14px;
+  }
 `;
 const InstagramIcon = styled.div`
   height: 30px;

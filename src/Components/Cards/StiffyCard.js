@@ -25,6 +25,10 @@ const Card = styled.div`
   cursor: pointer;
   overflow: hidden;
   transition: all .3s ease-in-out;
+  @media screen and (max-width: 550px) {
+    height: 250px;
+    width: 350px;
+  }
   &:active {
     transform: scale(0.9);
   }

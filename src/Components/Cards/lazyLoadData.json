@@ -1,0 +1,76 @@
+[
+    {
+        "id": 1,
+        "name": "Lisa",
+        "color": "#00A6ED"
+    },
+    {
+        "id": 2,
+        "name": "Donald",
+        "color": "#E84855"
+    },
+    {
+        "id": 3,
+        "name": "Tiffiny",
+        "color": "#5fb38b"
+    },
+    {
+        "id": 4,
+        "name": "Julia",
+        "color": "#00A6ED"
+    },
+    {
+        "id": 5,
+        "name": "Tina",
+        "color": "#E84855"
+    },
+    {
+        "id": 6,
+        "name": "Joe",
+        "color": "#5fb38b"
+    },
+    {
+        "id": 7,
+        "name": "Kwame"
+    },
+    {
+        "id": 8,
+        "name": "Henry"
+    },
+    {
+        "id": 9,
+        "name": "Nilam"
+    },
+    {
+        "id": 10,
+        "name": "Ted"
+    },
+    {
+        "id": 11,
+        "name": "Dipika"
+    },
+    {
+        "id": 12,
+        "name": "Felix"
+    },
+    {
+        "id": 13,
+        "name": "Katia"
+    },
+    {
+        "id": 14,
+        "name": "Sarah"
+    },
+    {
+        "id": 15,
+        "name": "Tim"
+    },
+    {
+        "id": 16,
+        "name": "Jason"
+    },
+    {
+        "id": 17,
+        "name": "Matty"
+    }
+]

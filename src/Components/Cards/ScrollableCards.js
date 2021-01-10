@@ -1,6 +1,3 @@
-// This Project Is From @frontendjoe on Instagram I am 
-// Practicing From Him To Increase My Strength On React
-// Thank you @fronendjoe for sharing th content :)
 import React, { useState } from "react";
 import { Scrollbars } from "react-custom-scrollbars";
 import styled from "styled-components";
@@ -17,8 +14,8 @@ const Wrapper = styled.div`
 const Card = styled.div`
   font-family: "SF Pro Text";
   font-weight: 900;
-  width: 500px;
-  height: 440px;
+  width: 600px;
+  height: 540px;
   overflow: hidden;
   border-radius: 1rem;
   background: white;
@@ -28,6 +25,7 @@ const Card = styled.div`
 `;
 
 const Topbar = styled.div`
+  z-index: 99;
   position: absolute;
   top: 0;
   left: 50%;
