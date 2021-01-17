@@ -2,7 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import toast, { Toaster } from 'react-hot-toast';
 
-const notify = () => toast('Here is your toast.');
+const notify = () => toast('Here is your toast📦.');
 
 const Wrapper = styled.div`
   height: 100vh;
@@ -13,11 +13,11 @@ const Wrapper = styled.div`
   background: #19456b;
 `;
 const Button = styled.div`
-  height: 50px;
-  width: 150px;
+  height: 70px;
+  width: 200px;
   display: flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   border-radius: 2rem;
   background: #16c79a;
   color: #fff;
