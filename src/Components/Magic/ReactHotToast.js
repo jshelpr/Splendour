@@ -18,7 +18,7 @@ const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  border-radius: 2rem;
+  border-radius: 0.512rem;
   background: #16c79a;
   color: #fff;
   font-weight: 600;
