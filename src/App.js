@@ -12,6 +12,7 @@ import RippleButton from "./Components/Magic/RippleButton";
 import CountryPicker from "./Components/Magic/CountryPicker";
 import SwitchableCard from "./Components/Cards/SwitchableCard";
 import TabbedCards from "./Components/Cards/TabbedCards";
+import HotToast from "./Components/Magic/ReactHotToast.js";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -48,6 +49,7 @@ const App = () => {
           <CountryPicker />
           <SwitchableCard />
           <TabbedCards />
+          <HotToast />
         </Flex>
       </Scrollbars>
     </Splendour>
