@@ -15,6 +15,9 @@ const Wrapper = styled.div`
 const Button = styled.div`
   height: 50px;
   width: 150px;
+  display: flex;
+  align-items: center;
+  text-align: center;
   border-radius: 2rem;
   background: #16c79a;
   color: #fff;
