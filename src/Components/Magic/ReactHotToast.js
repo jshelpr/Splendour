@@ -31,7 +31,8 @@ const HotToast = () => {
   return (
     <Wrapper>
       <Button onClick={notify}>Make me a toast</Button>
-      <Toaster />
+      <Toaster position="bottom-center"
+  reverseOrder={true} />
     </Wrapper>
   );
 };
