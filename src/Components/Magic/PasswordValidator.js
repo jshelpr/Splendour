@@ -46,7 +46,6 @@ const Button = styled.span`
   background: #72c;
   color: #fff;
   cursor: pointer;
-  font-weight: 900;
   transition: width 0.45s, border-radius 0.35s;
 `;
 
@@ -65,7 +64,7 @@ const PasswordValidator = () => {
                 background: `${isValid ? "rgb(241, 107, 107)" : "#72c"}`   
             }}
             >
-                    {isValid ? "close" : "arrow_right" }
+                    {isValid ? "close" : "login" }
             </Button>
             </InputWrapper>
         </Wrapper>
