@@ -5,11 +5,14 @@ import { rgba } from "polished";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const Card = styled.div`
   font-family: "SF Pro Text";
@@ -22,6 +25,10 @@ const Card = styled.div`
   padding-top: 7rem;
   box-shadow: 0 4px 15px ${rgba("black", 0.05)};
   transform: scale(.70) translate(0, 50px);
+  @media screen and (max-width: 550px) {
+      width: 500px;
+      height: 360px;
+  }
 `;
 
 const Topbar = styled.div`

@@ -2,11 +2,14 @@ import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #72c;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const Button = styled.div`
   display: flex;
@@ -30,7 +33,7 @@ const Button = styled.div`
 `;
 const Text = styled.div`
   color: #b3b3b3;
-  font-size: 45px;
+  font-size: 35px;
   font-family: "SF Pro Text";
 `;
 const Loading = keyframes`
@@ -47,7 +50,7 @@ const Loader = styled.div`
   display: none;
   height: 5px;
   width: 200px;
-  transform: translate(10px, 21px);
+  transform: translate(10px, 41px);
   background: linear-gradient(90deg, #119, #199, #72c, #166edc);
   &.loading {
     display: block;

@@ -12,6 +12,7 @@ import RippleButton from "./Components/Magic/RippleButton";
 import CountryPicker from "./Components/Magic/CountryPicker";
 import SwitchableCard from "./Components/Cards/SwitchableCard";
 import TabbedCards from "./Components/Cards/TabbedCards";
+import PasswordValidator from "./Components/Magic/PasswordValidator";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -38,6 +39,10 @@ const App = () => {
       <Scrollbars autoHide>
         <Topbar />
         <Flex>
+          <TabbedCards />
+          <PasswordValidator />
+          <CountryPicker />
+          <SwitchableCard />
           <PushCard />
           <ScrollabeCards />
           <StiffyCard />
@@ -45,9 +50,6 @@ const App = () => {
           <SimpleLoader />
           <UpdateButton />
           <RippleButton />
-          <CountryPicker />
-          <SwitchableCard />
-          <TabbedCards />
         </Flex>
       </Scrollbars>
     </Splendour>

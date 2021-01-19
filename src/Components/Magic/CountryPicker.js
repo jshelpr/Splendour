@@ -5,11 +5,14 @@ import json from "./countryPicker.json";
 
 const Body = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background: ${rgba("#eee", 0.50)};
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 
 const Card = styled.div`

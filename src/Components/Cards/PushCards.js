@@ -4,11 +4,14 @@ import Navigate from "../../assets/navigate.svg";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #111122;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const CardContainer = styled.div`
    position: absolute;

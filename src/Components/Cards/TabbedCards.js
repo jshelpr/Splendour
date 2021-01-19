@@ -3,13 +3,16 @@ import styled from "styled-components";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   background: #199999aa;
   overflow: hidden;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const Card = styled.div`
   height: 280px;
@@ -26,10 +29,6 @@ const TabBar = styled.div`
   height: 30px;
   width: 250px;
   display: flex;
-  align-items: center;
-  justify-content: space-between;
-  padding: 0;
-  margin: 0;
   border-radius: 0.512rem;
   border: 2px solid #166edc;
   overflow: hidden;

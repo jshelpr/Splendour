@@ -6,5 +6,5 @@ Micro Interaction React.js is free to use under MIT License.
 Design and Coded By Haneen Mahdin
 
 ### `Links`
-- (Instagram)[https://github.com/haneenmahd]
-- (Github) [https://github.com/haneenmahd]
+- (https://instagram.com/haneenmahdin)[]Instagram
+- (https://github.com/haneenmahd)[]Github

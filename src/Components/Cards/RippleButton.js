@@ -1,4 +1,3 @@
-// This Contains Only The Earliest Commit :)
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { lighten, darken } from "polished";
@@ -72,7 +71,7 @@ const RippleCard = props => {
         rippleDomElement.style.top = `${event.clientY - rect.y}px`;
         rippleDomElement.style.left = `${event.clientX - rect.x}px`;
 
-        const rippleCard = document.getElementById("ripple-card");
+        const rippleCard = document.getElementById("ripple-btn");
 
         const removeFunction = () => rippleCard.removeChild(rippleDomElement);
 
@@ -83,7 +82,7 @@ const RippleCard = props => {
     };
 
     return (
-        <Card id="ripple-card" onClick={onClick}>
+        <Card id="ripple-btn" onClick={onClick}>
             <CardText>Ripple Button</CardText>
         </Card>
     );

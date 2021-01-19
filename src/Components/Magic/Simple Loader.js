@@ -2,13 +2,16 @@ import styled, { keyframes } from "styled-components";
 
 const Wrapper = styled.div`
    height: 100vh;
-   width: 100%;
+   width: 50%;
    display: flex;
    flex-direction: row;
    flex-wrap: wrap;
    align-items: center;
    justify-content: space-around;
    overflow: hidden;
+   @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const Loading = keyframes`
    from {

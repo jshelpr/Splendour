@@ -3,13 +3,16 @@ import Bg from "../../assets/MacBook.png";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
   justify-content: center;
   background: #199999aa;
   overflow: hidden;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 // Be Good to take this color of the body : #199999aa :)
 const Card = styled.div`
@@ -26,8 +29,8 @@ const Card = styled.div`
   overflow: hidden;
   transition: all .3s ease-in-out;
   @media screen and (max-width: 550px) {
-    height: 250px;
-    width: 350px;
+    height: 200px;
+    width: 300px;
   }
   &:active {
     transform: scale(0.9);
@@ -51,6 +54,9 @@ const Text = styled.div`
   height: 50px;
   color: #222222;
   background: #fffeee;
+  @media screen and (max-width: 550px) {
+      font-size: 15px;
+  }
 `;
 const StiffyCard = () => {
     return (

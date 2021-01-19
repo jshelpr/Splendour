@@ -4,11 +4,14 @@ import { rgba } from "polished";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const CardAnim = keyframes`
   from {

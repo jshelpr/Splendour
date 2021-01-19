@@ -3,11 +3,14 @@ import styled, { keyframes } from "styled-components";
 const Wrapper = styled.div`
   font-family: "DM Sans";
   height: 100vh;
-  width: 100%;
+  width: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #222;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const Button = styled.div`
   display: flex;

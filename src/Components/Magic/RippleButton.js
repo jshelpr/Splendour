@@ -7,12 +7,15 @@ const rippleAnimationDuration = "1.15s";
 
 const Wrapper = styled.div`
   height: 100vh;
-  width: 100vw;
+  width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
   background: #fff;
   transition: background 0.45s;
+  @media screen and (max-width: 550px) {
+      width: 100%;
+  }
 `;
 const rippleAnimation = keyframes`
   0% {
