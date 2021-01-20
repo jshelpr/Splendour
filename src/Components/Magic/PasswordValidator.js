@@ -14,12 +14,11 @@ const Wrapper = styled.div`
   }
 `;
 const InputWrapper = styled.div`
-  padding: 0.512rem;
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 45px;
-  width: 250px;
+  height: 55px;
+  width: 260px;
   border-radius: 3rem;
   background: #fff;
   box-shadow: 0 20px 40px 0 ${rgba("#000", 0.10)};
@@ -42,10 +41,11 @@ const Button = styled.span`
   border-radius: 50%;
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: #72c;
   color: #fff;
   cursor: pointer;
+  font-weight: 900;
   transition: width 0.45s, border-radius 0.35s;
 `;
 
@@ -54,17 +54,26 @@ const PasswordValidator = () => {
     return(
         <Wrapper>
             <InputWrapper>
-            <Input type="text" onFocus={() => setValid(false)} value={isValid ? "" : null} placeholder="Password" />
+            <Input 
+            style={{
+               display: `${isValid ? "none" : "flex"}`
+            }}
+            type="text" 
+            onFocus={() => setValid(false)} 
+            value={isValid ? "" : null} 
+            placeholder="Password" />
             <Button
             className="material-icons"
             onClick={() => setValid(!isValid)} 
             style={{
-                width: `${isValid ? 100 : 50}px`,
+                height: `${isValid ? 55 : 50}px`,
+                width: `${isValid ? 260 : 50}px`,
                 borderRadius: `${isValid ? 10 : 50}px`,
                 background: `${isValid ? "rgb(241, 107, 107)" : "#72c"}`   
             }}
             >
-                    {isValid ? "close" : "login" }
+                    {isValid ? "Invalid Password" : "arrow_forward" }
+                    {isValid ? <span className="material-icons">close</span> : ""}
             </Button>
             </InputWrapper>
         </Wrapper>

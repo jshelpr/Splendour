@@ -51,9 +51,6 @@ const App = () => {
           <SimpleLoader />
           <UpdateButton />
           <RippleButton />
-          <CountryPicker />
-          <SwitchableCard />
-          <TabbedCards />
           <HotToast />
         </Flex>
       </Scrollbars>
