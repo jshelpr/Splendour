@@ -49,6 +49,7 @@ const Button = styled.span`
   transition: width 0.45s, border-radius 0.35s;
 `;
 const Invalid = styled.div`
+  font-size: 17px;
   animation: invalid-anim 2s;
   @keyframes invalid-anim {
     from {

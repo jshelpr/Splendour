@@ -16,6 +16,7 @@ import PasswordValidator from "./Components/Magic/PasswordValidator";
 import HotToast from "./Components/Magic/ReactHotToast";
 import LazyLoadCard from "./Components/Cards/lazyLoadCard";
 import PushButton from "./Components/Magic/PushButton";
+import FrostyCard from "./Components/Cards/FrostyCard";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -43,8 +44,9 @@ const App = () => {
         <Topbar />
         <Flex>
           <LazyLoadCard />
-          <PushButton />
           <PasswordValidator />
+          <PushButton />
+          <FrostyCard />
           <TabbedCards />
           <CountryPicker />
           <SwitchableCard />

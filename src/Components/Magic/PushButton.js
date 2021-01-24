@@ -8,7 +8,7 @@ const Wrapper = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #eee;
+  background: #fff;
   @media screen and (max-width: 550px) {
       width: 100vw;
   }
