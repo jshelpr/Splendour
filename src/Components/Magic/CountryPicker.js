@@ -85,10 +85,10 @@ const Dialog = styled.div`
   border-radius: 3rem;
   visibility: ${(p) => (p.open ? "visible" : "hidden")};
   opacity: ${(p) => (p.open ? 1 : 0)};
-  transform: translateY(${(p) => (p.open ? 0 : "2rem")});
+  transform: translateY(${(p) => (p.open ? 0 : "20rem")});
   background: #fff;
   transition-property: visibility, opacity, transform;
-  transition-duration: 0.35s;
+  transition-duration: 0.45s;
   &::-webkit-scrollbar {
     display: none;
   }

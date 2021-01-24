@@ -2,12 +2,7 @@ import React from "react";
 import styled from "styled-components";
 import toast, { Toaster } from "react-hot-toast";
 
-const notify = () => toast.promise('Successfuly Made you a toast.',
-  {
-  loading: 'Saving',
-  success: 'Successfully Saved',
-  error: 'Error Saing'
-})
+const notify = () => toast.success('Successfuly Made you a toast.');  
 
 const Wrapper = styled.div`
   user-select: none;
@@ -37,7 +32,7 @@ const Button = styled.div`
     transform: scale(0.97);
   }
 `;
-const HotToast = (p) => {
+const HotToast = () => {
   return (
     <Wrapper>
       <Button onClick={notify}>Make me a toast</Button>

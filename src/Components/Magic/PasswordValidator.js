@@ -48,6 +48,17 @@ const Button = styled.span`
   font-weight: 900;
   transition: width 0.45s, border-radius 0.35s;
 `;
+const Invalid = styled.div`
+  animation: invalid-anim 2s;
+  @keyframes invalid-anim {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+  }
+`;
 
 const PasswordValidator = () => {
     const [isValid, setValid] = useState(false);
@@ -72,8 +83,8 @@ const PasswordValidator = () => {
                 background: `${isValid ? "rgb(241, 107, 107)" : "#72c"}`   
             }}
             >
-                    {isValid ? "Invalid Password" : "arrow_forward" }
-                    {isValid ? <span className="material-icons">close</span> : ""}
+                    {isValid ? <Invalid>Invalid Password</Invalid> : <span style={{ animation: `invalid-anim 2s`, overflow: "hidden" }} className="material-icons">arrow_forward</span> }
+                    {isValid ? <span style={{ animation: `invalid-anim 2s` }} className="material-icons">close</span> : ""}
             </Button>
             </InputWrapper>
         </Wrapper>

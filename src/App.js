@@ -13,7 +13,9 @@ import CountryPicker from "./Components/Magic/CountryPicker";
 import SwitchableCard from "./Components/Cards/SwitchableCard";
 import TabbedCards from "./Components/Cards/TabbedCards";
 import PasswordValidator from "./Components/Magic/PasswordValidator";
-import HotToast from "./Components/Magic/ReactHotToast.js";
+import HotToast from "./Components/Magic/ReactHotToast";
+import LazyLoadCard from "./Components/Cards/lazyLoadCard";
+import PushButton from "./Components/Magic/PushButton";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -40,8 +42,10 @@ const App = () => {
       <Scrollbars autoHide>
         <Topbar />
         <Flex>
-          <TabbedCards />
+          <LazyLoadCard />
+          <PushButton />
           <PasswordValidator />
+          <TabbedCards />
           <CountryPicker />
           <SwitchableCard />
           <PushCard />

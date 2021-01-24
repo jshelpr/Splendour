@@ -51,7 +51,7 @@ const TopBar = () => {
             <a target="_blank" rel="noreferrer" href="https://www.github.com/haneenmahd/Splendour"><GithubIcon /></a>
             <Text>
                 MICRO INTERACTIONS
-                </Text>
+            </Text>
             <a target="_blank" rel="noreferrer" href="https://www.instagram.com/haneenmahdin"><InstagramIcon /></a>
         </Topbar>
     );

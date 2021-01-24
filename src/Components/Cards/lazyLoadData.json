@@ -31,46 +31,57 @@
     },
     {
         "id": 7,
-        "name": "Kwame"
+        "name": "Kwame",
+        "color": "#5fb38b"
     },
     {
         "id": 8,
-        "name": "Henry"
+        "name": "Henry",
+        "color": "#E84855"
     },
     {
         "id": 9,
-        "name": "Nilam"
+        "name": "Nilam",
+        "color": "#166edc"
     },
     {
         "id": 10,
-        "name": "Ted"
+        "name": "Ted",
+        "color": "#72c"
     },
     {
         "id": 11,
-        "name": "Dipika"
+        "name": "Dipika",
+        "color": "#42c"
     },
     {
         "id": 12,
-        "name": "Felix"
+        "name": "Felix",
+        "color": "#199"
     },
     {
         "id": 13,
-        "name": "Katia"
+        "name": "Katia",
+        "color": "#119"
     },
     {
         "id": 14,
-        "name": "Sarah"
+        "name": "Sarah",
+        "color": "linear-gradient(45deg, #199, #119)"
     },
     {
         "id": 15,
-        "name": "Tim"
+        "name": "Tim",
+        "color": "linear-gradient(45deg, #E84855, #42c)"
     },
     {
         "id": 16,
-        "name": "Jason"
+        "name": "Jason",
+        "color":"linear-gradient(45deg, #E84855, #00A6ED)"
     },
     {
         "id": 17,
-        "name": "Matty"
+        "name": "Matty",
+        "color":"linear-gradient(45deg, #00A6ED, #5fb38b)"
     }
 ]
