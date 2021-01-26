@@ -1,17 +1,19 @@
 import React from "react";
 import styled, { keyframes } from "styled-components";
 import { rgba } from "polished";
+import { Colors } from "apple-colors";
+import { Text } from "../../Layout/AltText"; 
 
-const backgroundColor = "#6f4ae2";
-const rippleAnimationDuration = "1.15s";
+const rippleAnimationDuration = "1.5s";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: ${rgba("#166edc", 0.20)};
   transition: background 0.45s;
   @media screen and (max-width: 550px) {
       width: 100%;
@@ -23,13 +25,10 @@ const rippleAnimation = keyframes`
     transform: scale(0.5) translate(-50%, -50%);
   }
   35% {
-    opacity: .6;
-  }
-  70% {
-    opacity: 0;
+    opacity: 0.6;
   }
   100% {
-    transform: scale(3.25) translate(-50%, -50%);
+    transform: scale(3) translate(-50%, -50%);
   }
 `;
 
@@ -39,18 +38,19 @@ const Button = styled.div`
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 270px;
-  height: 100px;
-  border-radius: 20px;
-  background: ${backgroundColor};
-  box-shadow: 2px 2px 50px rgba(0, 0, 0, 0.15);
+  width: 200px;
+  height: 70px;
+  border-radius: 3rem;
+  background: ${Colors.WatchOS.VintageRose};
   user-select: none;
   cursor: pointer;
   & .ripple {
     position: absolute;
+    top: 50%;
+    left: 50%;
     z-index: 1;
-    width: 80px;
-    height: 80px;
+    width: 100px;
+    height: 100px;
     border-radius: 50%;
     background: ${rgba("#eeeeee", 0.40)};
     opacity: 0;
@@ -66,7 +66,8 @@ const CardText = styled.div`
   font-weight: 600;
   color: #ffffff;
   pointer-events: none;
-  font-family: "Poppins";
+  font-size: 20px;
+  font-family: "DM Sans", sans-serif;
   font-weight: 900;
 `;
 
@@ -94,6 +95,7 @@ const RippleCard = props => {
         <Button id="ripple-card" onClick={onClick}>
             <CardText>Ripple Button</CardText>
         </Button>
+        <Text>Ripple Button</Text>
       </Wrapper>
     );
 };

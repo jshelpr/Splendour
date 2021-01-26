@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+import { Text } from "../../Layout/AltText";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50%;
   display: flex;
@@ -72,6 +74,7 @@ const TabbedCards = () => {
                 {isActive === "first" ? <h1>Home</h1> : isActive === "second" ? <h1>Activity</h1> : <h1>Your Account.</h1> }
             </div>
         </Card>
+        <Text isDark>Tabbed Cards</Text>
         </Wrapper>
     );
 } 

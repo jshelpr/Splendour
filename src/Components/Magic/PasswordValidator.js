@@ -1,14 +1,17 @@
 import React, { useState } from "react";
 import styled from "styled-components";
 import { rgba } from "polished";
+import { Colors } from "apple-colors";
+import { Text } from "../../Layout/AltText";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: ${rgba("#eee", 0.50)};
+  background: ${Colors.WatchOS.Turquoise};
   @media screen and (max-width: 550px) {
       width: 100%;
   }
@@ -88,6 +91,7 @@ const PasswordValidator = () => {
                     {isValid ? <span style={{ animation: `invalid-anim 2s` }} className="material-icons">close</span> : ""}
             </Button>
             </InputWrapper>
+            <Text>Password Validator</Text>
         </Wrapper>
     ); 
 }

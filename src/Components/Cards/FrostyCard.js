@@ -1,5 +1,6 @@
 import React from "react";
 import styled, { css } from "styled-components";
+import { Text } from "../../Layout/AltText";
 
 const Graphic = css`
   content: "";
@@ -9,6 +10,10 @@ const Graphic = css`
   background: linear-gradient(45deg, #166edc, #199);
   border-radius: 50%;
   z-index: 0;
+  @media screen and (max-width: 550px) {
+      height: 100px;
+      width: 100px;
+  }
 `;
 
 const Wrapper = styled.div`
@@ -33,6 +38,14 @@ const Wrapper = styled.div`
       right: 100px;
       background: linear-gradient(90deg, #166edc, #199);
   }
+  @media screen and (max-width: 550px) {
+      &::before {
+          left: 40px;
+      }
+      &::after {
+          right: 40px;
+      }
+  }
 `;
 
 const Card = styled.div`
@@ -53,6 +66,7 @@ const FrostyCard = () => {
     return(
         <Wrapper>
             <Card></Card>
+            <Text isDark>Frosty Card</Text>
         </Wrapper>
     );
 };

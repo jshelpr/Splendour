@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
+import { Text } from "../../Layout/AltText"; 
 
 const Wrapper = styled.div`
+  position: relative;
   font-family: "DM Sans";
   height: 100vh;
   width: 50%;
@@ -75,7 +77,7 @@ const TextIn = keyframes`
     opacity: 1;
   }
 `;
-const Text = styled.div`
+const SendText = styled.div`
   z-index: 0;
   margin-left: 15px;
   position: relative;
@@ -115,8 +117,9 @@ const SendButton = () => {
         <Wrapper>
             <Button id="btn" onClick={OnClick}>
                 <PaperPlane id="paperplane"><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="black" width="20px" height="20px"><path d="M0 0h24v24H0z" fill="none" /><path fill="white" d="M2.01 21L23 12 2.01 3 2 10l15 2-15 2z" /></svg></PaperPlane>
-                <Text id="text">Send</Text>
+                <SendText id="text">Send</SendText>
             </Button>
+            <Text isDark>Paperplane Send Button</Text>
         </Wrapper>
     );
 }

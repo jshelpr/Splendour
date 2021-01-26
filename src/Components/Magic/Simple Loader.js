@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
+import { Text } from "../../Layout/AltText"; 
 
 const Wrapper = styled.div`
+   position: relative;
    height: 100vh;
    width: 50%;
    display: flex;
@@ -35,6 +37,7 @@ const StackLoader = () => {
   return (
     <Wrapper>
       <Loader></Loader>
+      <Text>Simple Loader</Text>
     </Wrapper>
   );
 }

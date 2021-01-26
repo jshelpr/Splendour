@@ -1,11 +1,12 @@
 import React from "react";
 import styled from "styled-components";
 import toast, { Toaster } from "react-hot-toast";
+import { Text } from "../../Layout/AltText"; 
 
 const notify = () => toast.success('Successfuly Made you a toast.');  
 
 const Wrapper = styled.div`
-  user-select: none;
+  position: relative;
   height: 100vh;
   width: 50vw;
   display: flex;
@@ -37,6 +38,7 @@ const HotToast = () => {
     <Wrapper>
       <Button onClick={notify}>Make me a toast</Button>
       <Toaster position="top" />
+      <Text isDark>Hot Toast🔥</Text>
     </Wrapper>
   );
 };

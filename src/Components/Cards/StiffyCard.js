@@ -1,7 +1,9 @@
 import styled from "styled-components";
 import Bg from "../../assets/MacBook.png";
+import { Text } from "../../Layout/AltText";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50%;
   display: flex;
@@ -14,7 +16,7 @@ const Wrapper = styled.div`
       width: 100%;
   }
 `;
-// Be Good to take this color of the body : #199999aa :)
+
 const Card = styled.div`
   display: flex;
   align-items: flex-start;
@@ -42,7 +44,7 @@ const Img = styled.div`
   background: url(${Bg});
   background-size: 450px;
 `;
-const Text = styled.div`
+const Paragraph = styled.div`
   display: flex;
   flex-wrap: nowrap;
   align-items: center;
@@ -63,8 +65,9 @@ const StiffyCard = () => {
         <Wrapper>
          <Card>
           <Img></Img>
-          <Text>Hi! Great To See You Again!</Text>
+          <Paragraph>Hi! Great To See You Again!</Paragraph>
           </Card>
+          <Text isDark>Stiffy Card</Text>
         </Wrapper>
     );
 };

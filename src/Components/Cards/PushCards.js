@@ -1,8 +1,10 @@
 import styled, { keyframes } from "styled-components";
 import ThreeDot from "../../assets/three-dot.svg";
 import Navigate from "../../assets/navigate.svg";
+import { Text } from "../../Layout/AltText";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50%;
   display: flex;
@@ -162,12 +164,12 @@ const Paragraph = styled.div`
   font-weight: 400;
 `;
 const PushCards = () => {
-    const OnClickPush = event => {
+    const OnClickPush = () => {
         const PushCardElement = document.getElementById("push-card");
 
         PushCardElement.style.display = "flex";
     }
-    const PushBack = event => {
+    const PushBack = () => {
         const PushCardElement = document.getElementById("push-card");
         setTimeout(() => {
             PushCardElement.style.transform = "translateX(300px)";
@@ -199,6 +201,7 @@ const PushCards = () => {
                     </PushContent>
                 </PushCard>
             </CardContainer>
+            <Text isDark>Push Animation Card</Text>
         </Wrapper>
     );
 }

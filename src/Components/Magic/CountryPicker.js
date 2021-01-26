@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import styled from "styled-components";
 import { rgba } from "polished";
 import json from "./countryPicker.json";
+import { Text } from "../../Layout/AltText";
 
 const Body = styled.div`
+  position: relative;
   height: 100vh;
   width: 50vw;
   display: flex;
@@ -136,7 +138,7 @@ const Code = styled.div`
 const Button = styled.input`
   font-family: "DM Sans", sans-serif;
   font-weight: 900;
-  font-size: 20px;
+  font-size: 18px;
   width: 100%;
   height: 50px;
   padding: 0;
@@ -187,10 +189,11 @@ const CountryPicker = () => {
                     ))};
                 </Dialog>
             </Wrapper>
-            <Input placeholder="Name" />
+            <Input autoComplete="off" placeholder="Name" />
             <Input placeholder="Email" />
             <Button type="button" value="Save" />
         </Card>
+        <Text>CountryPicker</Text>
         </Body>
     );
 };

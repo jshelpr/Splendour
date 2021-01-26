@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import { Scrollbars } from "react-custom-scrollbars";
 import styled from "styled-components";
 import { rgba } from "polished";
+import { Text } from "../../Layout/AltText";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50%;
   display: flex;
@@ -135,9 +137,7 @@ const ScrollableCard = () => {
     ]);
 
     const [navItems] = useState([
-        { icon: "" },
         { icon: "Haneen's Mail", isActive: true },
-        { icon: "" }
     ]);
 
     return (
@@ -169,6 +169,7 @@ const ScrollableCard = () => {
                 ))}
             </Scrollbars>
         </Card>
+        <Text isBig>Scrollable Card</Text>
         </Wrapper>
     );
 };

@@ -1,14 +1,16 @@
 import React, { useState } from "react";
 import styled from "styled-components";
-import { Colors } from "./index";
+import { Colors } from "apple-colors";
+import { Text } from "../../Layout/AltText";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50vw;
   display: flex;
   align-items: center;
   justify-content: center;
-  background: #fff;
+  background: ${Colors.iOS.Dark.Grey5};
   @media screen and (max-width: 550px) {
       width: 100vw;
   }
@@ -30,6 +32,7 @@ const Button = styled.button`
   border-radius: 10px;   
   border: none;
   outline: none;
+  transform: scale(1.35);
   transition: all .3s ease-in-out;
   &:focus {
       box-shadow: 0 0 0 5px ${Colors.iOS.Light.Blue}6c;
@@ -38,13 +41,14 @@ const Button = styled.button`
 
 const PushButton = () => {
     const [isFollowing, setFollow] = useState(false);
-    return(
+    return (
         <Wrapper>
             <Button
-            onClick={() => setFollow(!isFollowing)}
+                onClick={() => setFollow(!isFollowing)} 
             >
-                { isFollowing ? "Following" : "Follow"}
+                {isFollowing ? "Following" : "Follow"}
             </Button>
+            <Text isDark>Push Button</Text>
         </Wrapper>
     );
 }

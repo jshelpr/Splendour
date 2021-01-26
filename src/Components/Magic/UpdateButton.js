@@ -1,6 +1,8 @@
 import styled, { keyframes } from "styled-components";
+import { Text } from "../../Layout/AltText"; 
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50%;
   display: flex;
@@ -31,7 +33,7 @@ const Button = styled.div`
     cursor: not-allowed;
   }
 `;
-const Text = styled.div`
+const UpdateText = styled.div`
   color: #b3b3b3;
   font-size: 35px;
   font-family: "SF Pro Text";
@@ -76,11 +78,12 @@ const UpdateButton = () => {
       }
   return(
     <Wrapper>
-    <Button onClick={OnClick} id="btn">
-    <Text id="update-text">Update</Text>
-    <Loader id="load">
-    </Loader>
-    </Button>
+       <Button onClick={OnClick} id="btn">
+         <UpdateText id="update-text">Update</UpdateText>
+         <Loader id="load">
+         </Loader>
+       </Button>
+     <Text isDark>Update Button</Text>
     </Wrapper>
   );
 }

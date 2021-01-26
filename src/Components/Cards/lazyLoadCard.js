@@ -2,8 +2,10 @@ import React from "react";
 import styled from "styled-components";
 import { rgba } from "polished";
 import data from "./lazyLoadData.json";
+import { Text } from "../../Layout/AltText";
 
 const Wrapper = styled.div`
+  position: relative;
   height: 100vh;
   width: 50vw;
   display: flex;
@@ -76,6 +78,7 @@ const LazyLoadCard = () => {
                 </User>
             ))}
         </Card>
+        <Text isDark>LazyLoad Card</Text>
         </Wrapper>
     );
 }

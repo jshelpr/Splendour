@@ -17,6 +17,7 @@ import HotToast from "./Components/Magic/ReactHotToast";
 import LazyLoadCard from "./Components/Cards/lazyLoadCard";
 import PushButton from "./Components/Magic/PushButton";
 import FrostyCard from "./Components/Cards/FrostyCard";
+import OutlinedInput from "./Components/Magic/OutlinedInput";
 
 const Splendour = styled.div`
   height: 100vh;
@@ -58,6 +59,7 @@ const App = () => {
           <UpdateButton />
           <RippleButton />
           <HotToast />
+          <OutlinedInput />
         </Flex>
       </Scrollbars>
     </Splendour>
